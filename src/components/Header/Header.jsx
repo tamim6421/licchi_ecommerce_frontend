@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { IoSearch } from "react-icons/io5";
 
@@ -18,9 +19,12 @@ const Header = () => {
             <IoSearch className="text-white"/>
           </button>
         </div>
+        <Link href="/login">
         <button className="capitalize bg-blue-700 px-5 py-2 rounded text-white" data-aos="fade-left">
           login
         </button>
+        </Link>
+      
       </header>
     </div>
   );

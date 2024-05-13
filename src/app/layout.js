@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Cartpopup from "@/components/cartpopup/Cartpopup";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -15,7 +16,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />{children}<Cartpopup /> <Footer />
+        <Header />
+
+
+        {children}
+        <Cartpopup />
+         <Footer />
       </body>
     </html>
   );
